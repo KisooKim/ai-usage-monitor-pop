@@ -34,8 +34,21 @@
           <span class="hero-req">Windows 10 / 11 · ~0.8 MB</span>
         </div>
         <div class="hero-art reveal">
-          <img src="assets/panel-hero.webp" width="640"
-               alt="The AI Usage Monitor Pop panel showing Claude and Codex usage with 5-hour and 7-day bars and reset countdowns">
+          <div class="ccm dark" role="img" aria-label="The panel showing Claude usage (5-hour, 7-day, and 7-day Sonnet) and Codex usage (5-hour, 7-day) as bars with reset countdowns">
+            <div class="ccm-col">
+              <div class="ccm-h ccm-c"><i class="ccm-dot"></i>Claude</div>
+              <div class="ccm-em">you@example.com</div>
+              <div class="ccm-r"><i>5h</i><span class="ccm-bar"><b style="width:1%"></b></span><em>0% · 2h 51m (4pm)</em></div>
+              <div class="ccm-r"><i>7d</i><span class="ccm-bar"><b style="width:16%"></b></span><em>16% · 2d 14h (6/30 Tue 4am)</em></div>
+              <div class="ccm-r"><i>7d-S</i><span class="ccm-bar"><b style="width:2%"></b></span><em>2% · 2d 14h (6/30 Tue 3:59am)</em></div>
+            </div>
+            <div class="ccm-col">
+              <div class="ccm-h ccm-x"><i class="ccm-dot"></i>Codex</div>
+              <div class="ccm-em">you@work.com</div>
+              <div class="ccm-r"><i>5h</i><span class="ccm-bar"><b class="x" style="width:1%"></b></span><em>1% · 4h 59m (6:08pm)</em></div>
+              <div class="ccm-r"><i>7d</i><span class="ccm-bar"><b class="x" style="width:39%"></b></span><em>39% · 8h 38m (9:47pm)</em></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -81,14 +94,10 @@
           <p>Match your desktop, light or dark.</p>
         </div>
         <div class="theme-grid">
-          <figure class="theme-card reveal"><img src="assets/panel-hero.webp" loading="lazy"
-            alt="Panel in Refined Hybrid Dark theme"><figcaption>Refined Hybrid Dark</figcaption></figure>
-          <figure class="theme-card reveal"><img src="assets/theme-hybrid-light.webp" loading="lazy"
-            alt="Panel in Refined Hybrid Light theme"><figcaption>Refined Hybrid Light</figcaption></figure>
-          <figure class="theme-card reveal"><img src="assets/theme-vibrancy.webp" loading="lazy"
-            alt="Panel in macOS Vibrancy theme"><figcaption>macOS Vibrancy</figcaption></figure>
-          <figure class="theme-card reveal"><img src="assets/theme-fluent.webp" loading="lazy"
-            alt="Panel in Windows 11 Fluent theme"><figcaption>Windows 11 Fluent</figcaption></figure>
+          <figure class="theme-card reveal" data-ccm="dark"><figcaption>Refined Hybrid Dark</figcaption></figure>
+          <figure class="theme-card reveal" data-ccm="light"><figcaption>Refined Hybrid Light</figcaption></figure>
+          <figure class="theme-card reveal" data-ccm="vibrancy"><figcaption>macOS Vibrancy</figcaption></figure>
+          <figure class="theme-card reveal" data-ccm="fluent"><figcaption>Windows 11 Fluent</figcaption></figure>
         </div>
       </div>
     </section>
