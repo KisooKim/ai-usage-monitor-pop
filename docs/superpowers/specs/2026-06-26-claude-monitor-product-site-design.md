@@ -139,16 +139,23 @@ the footer. Honest provenance, not erasure of the original.
 ## Deployment
 
 - Develop in `Development/claude-monitor-site/` (its own git repo).
-- Publish as a GitHub repo under the account that owns `kisookim.github.io`,
-  with GitHub Pages enabled (deploy from `main` branch root, or `/docs`).
+- Publish as a GitHub repo under the **KisooKim (`sincerityandaudacity`, devauth
+  alias `kisoo`)** account that owns `kisookim.github.io`, with GitHub Pages
+  enabled (deploy from `main` branch root, or `/docs`).
 - Served at `kisookim.github.io/<repo>/` (e.g.
   `kisookim.github.io/claude-code-usage-monitor/`).
 
 ## Open Items (confirm before/at deploy)
 
-1. **Which GitHub account owns `kisookim.github.io`?** No local repo was found;
-   devauth lists `kisoo` (sincerityandaudacity) and `critiquers`. Confirm the
-   account, then the repo name → final URL. (Blocks deploy only, not build.)
+1. ~~Which GitHub account owns `kisookim.github.io`?~~ **RESOLVED:** GitHub user
+   `KisooKim` (`sincerityandaudacity`, devauth alias `kisoo`). The
+   `kisookim/kisookim.github.io` repo exists and the site is **already live**.
+   Remaining sub-decision (deploy-time only, same final URL either way):
+   - **(a) Separate repo** `claude-code-usage-monitor` under KisooKim, Pages
+     enabled → `kisookim.github.io/claude-code-usage-monitor/`. Isolated; does
+     not touch the existing live site. **Default.**
+   - **(b) Subfolder** inside the existing `kisookim.github.io` repo →
+     same URL, but becomes part of the existing site.
 2. **Product name:** keeping "Claude Code Usage Monitor" (default). Change only if
    the user wants a distinct brand.
 3. **Aesthetic:** dark canvas + Claude orange (assumed approved).
