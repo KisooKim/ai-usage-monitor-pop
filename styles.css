@@ -30,3 +30,14 @@ h1,h2,h3{line-height:1.05;letter-spacing:-.02em;font-weight:600;margin:0}
   html{scroll-behavior:auto}
   .reveal{opacity:1!important;transform:none!important;transition:none!important}
 }
+
+/* ---- nav ---- */
+#nav{position:sticky;top:0;z-index:50;transition:background .3s,border-color .3s,backdrop-filter .3s;
+  border-bottom:1px solid transparent}
+#nav.frost{background:rgba(10,10,11,.72);backdrop-filter:saturate(160%) blur(18px);border-bottom-color:var(--border)}
+.nav-row{display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav-brand{font-weight:600;font-size:16px;letter-spacing:-.01em}
+.btn{display:inline-flex;align-items:center;gap:.5em;background:var(--accent);color:#1a1109;
+  font-weight:600;padding:14px 26px;border-radius:999px;transition:transform .15s,filter .15s;will-change:transform}
+.btn:hover{filter:brightness(1.06);transform:translateY(-1px)}
+.btn-sm{padding:9px 18px;font-size:15px}
