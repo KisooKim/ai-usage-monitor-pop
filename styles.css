@@ -87,7 +87,8 @@ h1,h2,h3{line-height:1.05;letter-spacing:-.02em;font-weight:600;margin:0}
 
 /* ---- highlights ---- */
 .highlights{list-style:none;padding:0;margin:0;
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(28px,4vw,52px)}
+  display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(28px,4vw,52px)}
+@media (max-width:560px){.highlights{grid-template-columns:1fr}}
 .highlights li{padding-top:18px;border-top:1px solid var(--border);position:relative}
 .highlights li::before{content:"";position:absolute;top:-1px;left:0;width:34px;height:2px;background:var(--accent-grad)}
 .highlights h3{font-size:19px;font-weight:600;letter-spacing:-.01em;margin:0 0 8px}
