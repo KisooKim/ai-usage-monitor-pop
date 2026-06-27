@@ -2,3 +2,7 @@
 Thumbs.db
 *.log
 node_modules/
+
+# internal (not for the public site repo)
+.superpowers/
+docs/
