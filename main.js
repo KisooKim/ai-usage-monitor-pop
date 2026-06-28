@@ -15,4 +15,11 @@ document.addEventListener('DOMContentLoaded',()=>{
       fig.insertBefore(p, fig.firstChild);
     });
   }
+
+  // Respect reduced-motion: don't autoplay the demo — show its poster frame instead.
+  const demo=document.querySelector('.demo-vid');
+  if(demo && window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    demo.removeAttribute('autoplay');
+    demo.load(); // reset to the static poster
+  }
 });
